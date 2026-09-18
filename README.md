@@ -61,9 +61,7 @@ Como você ajustaria o fluxo se, após lançar, descobrisse que 30% dos clientes
 
 ## Formato de entrega
 
-Pode ser documento escrito, vídeo, apresentação — o que preferir. O importante é mostrar seu raciocínio.
-
-Envie para [matheus.morett@monest.com.br](mailto:matheus.morett@monest.com.br) com o assunto **Teste Prompt Engineer - Monest**.
+Fork este repositório, implemente. Retorne ao e-mail em que você recebeu o teste e encaminhe seu resultado por lá com o assunto **Teste Prompt Engineer - Monest**.
 
 ---
 
