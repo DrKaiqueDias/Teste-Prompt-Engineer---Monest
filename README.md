@@ -101,6 +101,26 @@ As duas versões foram geradas e conferidas com Handlebars 4.7.9. `isCPF` precis
 
 O CNPJ pode incluir letras, como explica a [Receita Federal](https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/cnpj-alfanumerico). Por isso, a normalização preserva essas letras e converte as letras ASCII para maiúsculas, sem tentar substituir caracteres parecidos de outros alfabetos.
 
+### Como gerar e conferir os prompts
+
+Com Node.js e npm instalados, abra o terminal na pasta do projeto e execute:
+
+```sh
+npm ci
+npm run check
+```
+
+O comando renderiza o template com os dados do enunciado para CPF e CNPJ e compara o resultado com os dois arquivos `.txt`. Ele não altera os arquivos e retorna erro se algum estiver ausente ou diferente. A comparação aceita as quebras de linha do Windows e do Linux.
+
+Para gerar novamente os arquivos depois de editar `prompt.hbs`, execute:
+
+```sh
+npm run render
+npm run check
+```
+
+A versão do Handlebars está fixada no projeto. Esses comandos verificam a renderização; não executam conversas com um modelo nem consultam a ferramenta de validação.
+
 ## 3. Cenários de teste
 
 As conversas e os retornos abaixo são simulados. Os documentos são exemplos; não houve consulta a cadastros reais. Aqui, “válido” significa confirmado pela ferramenta nas condições descritas na seção 1.

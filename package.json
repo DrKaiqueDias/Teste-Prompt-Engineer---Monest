@@ -1,0 +1,13 @@
+{
+  "name": "teste-prompt-engineer-monest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prompt da Mia e cenários de validação para o teste da Monest.",
+  "scripts": {
+    "render": "node scripts/render.cjs",
+    "check": "node scripts/render.cjs --check"
+  },
+  "devDependencies": {
+    "handlebars": "4.7.9"
+  }
+}
